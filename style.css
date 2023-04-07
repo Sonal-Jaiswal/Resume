@@ -201,4 +201,11 @@ body {
     margin-top: auto;
   }
   
-    
+  <style>
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+  }
+</style>
+
