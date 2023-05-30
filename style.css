@@ -26,8 +26,6 @@ nav a {
     background-color: #FFF; /* replace with desired color */
     color: #F08080; /* replace with desired color */
   }
-  
-
 
 
 /* Style the header title */
@@ -154,8 +152,6 @@ footer {
 
 }
 
-
-
 body {
     background-color: #f2f2f2; /* replace with your desired color */
   }
@@ -201,11 +197,71 @@ body {
     margin-top: auto;
   }
   
-  <style>
-  @media screen and (max-width: 600px) {
-    body {
-      font-size: 20px;
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu-icon__bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-links.show {
+    display: block;
+  }
+
+  @media (max-width: 90 em  ) {
+    .container {
+      width: 1200rem;
+      height: auto;
+    }
+
+    .section-hero .grid-two-columns {
+      grid-template-columns: 1fr;
+    }
+
+    .scetion-hero-data{
+      align-items: center;
+    }
+    
+    .left-column {
+      width: 100%;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .nav-links {
+      position: absolute;
+      right: 1  ;
+      top: 4rem;
+      background-color: white;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-links li {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    
+    .menu-icon__bar {
+      background-color: white;
     }
   }
-</style>
+  
 
+ 
